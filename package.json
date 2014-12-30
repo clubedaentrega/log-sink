@@ -1,0 +1,26 @@
+{
+	"name": "log-sink",
+	"version": "0.0.0",
+	"author": "Sitegui <sitegui@sitegui.com.br>",
+	"description": "A log service, for streaming, storage and queries of log data",
+	"main": "./index.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sitegui/log-sink"
+	},
+	"keywords": [],
+	"dependencies": {},
+	"license": "MIT",
+	"engines": {
+		"node": ">=0.10"
+	},
+	"scripts": {
+		"test": "mocha test",
+		"docs": "jsdoc -d docs -c docs.json -R README.md"
+	},
+	"devDependencies": {
+		"jsdoc": "^3.3.0-alpha13",
+		"mocha": "^2.1.0",
+		"should": "^4.4.1"
+	}
+}
