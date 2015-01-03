@@ -9,7 +9,9 @@
 		"url": "https://github.com/sitegui/log-sink"
 	},
 	"keywords": [],
-	"dependencies": {},
+	"dependencies": {
+		"asynconnection-node": "^0.1.0"
+	},
 	"license": "MIT",
 	"engines": {
 		"node": ">=0.10"
