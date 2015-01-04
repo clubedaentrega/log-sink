@@ -62,3 +62,13 @@ it('should close the connection', function (done) {
 	sink.once('close', done)
 	sink.close()
 })
+
+it('should fail on stream and query after closed', function (done) {
+	sink.stream(function (err) {
+		err.message.should.be.equal('Connection is closed')
+		sink.query(function (err) {
+			err.message.should.be.equal('Connection is closed')
+			done()
+		})
+	})
+})
