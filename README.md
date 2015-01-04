@@ -65,4 +65,4 @@ conn2.connect('user2', 'pass2', options2)
 To understand more about log sink, read the doc on the [server project](https://github.com/clubedaentrega/log-sink-server)
 
 ## Docs
-All public methods are described in the generated docs:
+All public methods are described in the [generated docs](http://clubedaentrega.github.io/log-sink)
