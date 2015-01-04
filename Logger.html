@@ -39,32 +39,33 @@
     <div class="container-overview">
     
         
-<dt>
-    
-        <h4 class="name" id="Logger"><span class="type-signature"></span>new Logger<span class="signature">(conn, name)</span><span class="type-signature"></span></h4>
-
-        
-    
-</dt>
-<dd>
 
     
-    <div class="description">
-        <p>Used to ease logging multiple times with the same <code>name</code> field.
+    <h2>Constructor</h2>
+    
+
+    <h4 class="name" id="Logger"><span class="type-signature"></span>new Logger<span class="signature">(conn, name)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Used to ease logging multiple times with the same <code>name</code> field.
 Logs created this way will have the <code>time</code> field set as the elapsed time (in ms) between
 creation by <a href="Connection.html#bind">Connection#bind</a> and subsequent calls to its methods.</p>
-    </div>
-    
+</div>
 
-    
 
-    
 
-    
 
+
+
+
+
+
+    <h5>Parameters:</h5>
     
-        <h5>Parameters:</h5>
-        
 
 <table class="params">
     <thead>
@@ -133,12 +134,14 @@ creation by <a href="Connection.html#bind">Connection#bind</a> and subsequent ca
     
     </tbody>
 </table>
-    
 
-    
+
+
 
 
 <dl class="details">
+
+    
 
     
 
@@ -177,20 +180,19 @@ creation by <a href="Connection.html#bind">Connection#bind</a> and subsequent ca
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-</dd>
+
+
+
+
+
+
+
 
     
     </div>
@@ -208,36 +210,36 @@ creation by <a href="Connection.html#bind">Connection#bind</a> and subsequent ca
     
         <h3 class="subsection-title">Members</h3>
 
-        <dl>
+        
             
-<dt>
-    <h4 class="name" id="conn"><span class="type-signature"></span>conn<span class="type-signature"> :<a href="Connection.html">Connection</a></span></h4>
+<h4 class="name" id="conn"><span class="type-signature"></span>conn<span class="type-signature"> :<a href="Connection.html">Connection</a></span></h4>
 
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>Parent connection</p>
-    </div>
-    
 
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
+
+
+<div class="description">
+    <p>Parent connection</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
 <span class="param-type"><a href="Connection.html">Connection</a></span>
 
 
-            </li>
-        </ul>
-    
+        </li>
+    </ul>
 
-    
+
+
 
 
 <dl class="details">
+
+    
 
     
 
@@ -276,41 +278,40 @@ creation by <a href="Connection.html#bind">Connection#bind</a> and subsequent ca
 </dl>
 
 
-    
 
-    
-</dd>
+
+
 
         
             
-<dt>
-    <h4 class="name" id="name"><span class="type-signature"></span>name<span class="type-signature"> :string</span></h4>
+<h4 class="name" id="name"><span class="type-signature"></span>name<span class="type-signature"> :string</span></h4>
 
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>Binded <code>name</code> value</p>
-    </div>
-    
 
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
+
+
+<div class="description">
+    <p>Binded <code>name</code> value</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
 <span class="param-type">string</span>
 
 
-            </li>
-        </ul>
-    
+        </li>
+    </ul>
 
-    
+
+
 
 
 <dl class="details">
+
+    
 
     
 
@@ -349,41 +350,40 @@ creation by <a href="Connection.html#bind">Connection#bind</a> and subsequent ca
 </dl>
 
 
-    
 
-    
-</dd>
+
+
 
         
             
-<dt>
-    <h4 class="name" id="then"><span class="type-signature"></span>then<span class="type-signature"> :number</span></h4>
+<h4 class="name" id="then"><span class="type-signature"></span>then<span class="type-signature"> :number</span></h4>
 
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>The timestamp (in ms) when it was created</p>
-    </div>
-    
 
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
+
+
+<div class="description">
+    <p>The timestamp (in ms) when it was created</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
 <span class="param-type">number</span>
 
 
-            </li>
-        </ul>
-    
+        </li>
+    </ul>
 
-    
+
+
 
 
 <dl class="details">
+
+    
 
     
 
@@ -422,43 +422,41 @@ creation by <a href="Connection.html#bind">Connection#bind</a> and subsequent ca
 </dl>
 
 
-    
 
-    
-</dd>
 
-        </dl>
+
+
+        
     
 
     
         <h3 class="subsection-title">Methods</h3>
 
-        <dl>
+        
             
-<dt>
-    
-        <h4 class="name" id="debug"><span class="type-signature"></span>debug<span class="signature">(message<span class="signature-attributes">opt</span>, extra<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
-
-        
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Simpler way for <a href="Connection.html#sendLog">Connection#sendLog</a> with <code>level</code> set as DEBUG</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="debug"><span class="type-signature"></span>debug<span class="signature">(message<span class="signature-attributes">opt</span>, extra<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
 
     
 
+
+
+<div class="description">
+    <p>Simpler way for <a href="Connection.html#sendLog">Connection#sendLog</a> with <code>level</code> set as DEBUG</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
     
-        <h5>Parameters:</h5>
-        
 
 <table class="params">
     <thead>
@@ -552,12 +550,14 @@ creation by <a href="Connection.html#bind">Connection#bind</a> and subsequent ca
     
     </tbody>
 </table>
-    
 
-    
+
+
 
 
 <dl class="details">
+
+    
 
     
 
@@ -596,47 +596,45 @@ creation by <a href="Connection.html#bind">Connection#bind</a> and subsequent ca
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-</dd>
+
+
+
+
+
+
+
 
         
             
-<dt>
-    
-        <h4 class="name" id="error"><span class="type-signature"></span>error<span class="signature">(message<span class="signature-attributes">opt</span>, extra<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
-
-        
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Simpler way for <a href="Connection.html#sendLog">Connection#sendLog</a> with <code>level</code> set as ERROR</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="error"><span class="type-signature"></span>error<span class="signature">(message<span class="signature-attributes">opt</span>, extra<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
 
     
 
+
+
+<div class="description">
+    <p>Simpler way for <a href="Connection.html#sendLog">Connection#sendLog</a> with <code>level</code> set as ERROR</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
     
-        <h5>Parameters:</h5>
-        
 
 <table class="params">
     <thead>
@@ -730,12 +728,14 @@ creation by <a href="Connection.html#bind">Connection#bind</a> and subsequent ca
     
     </tbody>
 </table>
-    
 
-    
+
+
 
 
 <dl class="details">
+
+    
 
     
 
@@ -774,47 +774,45 @@ creation by <a href="Connection.html#bind">Connection#bind</a> and subsequent ca
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-</dd>
+
+
+
+
+
+
+
 
         
             
-<dt>
-    
-        <h4 class="name" id="fatal"><span class="type-signature"></span>fatal<span class="signature">(message<span class="signature-attributes">opt</span>, extra<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
-
-        
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Simpler way for <a href="Connection.html#sendLog">Connection#sendLog</a> with <code>level</code> set as FATAL</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="fatal"><span class="type-signature"></span>fatal<span class="signature">(message<span class="signature-attributes">opt</span>, extra<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
 
     
 
+
+
+<div class="description">
+    <p>Simpler way for <a href="Connection.html#sendLog">Connection#sendLog</a> with <code>level</code> set as FATAL</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
     
-        <h5>Parameters:</h5>
-        
 
 <table class="params">
     <thead>
@@ -908,12 +906,14 @@ creation by <a href="Connection.html#bind">Connection#bind</a> and subsequent ca
     
     </tbody>
 </table>
-    
 
-    
+
+
 
 
 <dl class="details">
+
+    
 
     
 
@@ -952,47 +952,45 @@ creation by <a href="Connection.html#bind">Connection#bind</a> and subsequent ca
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-</dd>
+
+
+
+
+
+
+
 
         
             
-<dt>
-    
-        <h4 class="name" id="info"><span class="type-signature"></span>info<span class="signature">(message<span class="signature-attributes">opt</span>, extra<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
-
-        
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Simpler way for <a href="Connection.html#sendLog">Connection#sendLog</a> with <code>level</code> set as INFO</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="info"><span class="type-signature"></span>info<span class="signature">(message<span class="signature-attributes">opt</span>, extra<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
 
     
 
+
+
+<div class="description">
+    <p>Simpler way for <a href="Connection.html#sendLog">Connection#sendLog</a> with <code>level</code> set as INFO</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
     
-        <h5>Parameters:</h5>
-        
 
 <table class="params">
     <thead>
@@ -1086,12 +1084,14 @@ creation by <a href="Connection.html#bind">Connection#bind</a> and subsequent ca
     
     </tbody>
 </table>
-    
 
-    
+
+
 
 
 <dl class="details">
+
+    
 
     
 
@@ -1130,47 +1130,45 @@ creation by <a href="Connection.html#bind">Connection#bind</a> and subsequent ca
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-</dd>
+
+
+
+
+
+
+
 
         
             
-<dt>
-    
-        <h4 class="name" id="warn"><span class="type-signature"></span>warn<span class="signature">(message<span class="signature-attributes">opt</span>, extra<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
-
-        
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Simpler way for <a href="Connection.html#sendLog">Connection#sendLog</a> with <code>level</code> set as WARN</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="warn"><span class="type-signature"></span>warn<span class="signature">(message<span class="signature-attributes">opt</span>, extra<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
 
     
 
+
+
+<div class="description">
+    <p>Simpler way for <a href="Connection.html#sendLog">Connection#sendLog</a> with <code>level</code> set as WARN</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
     
-        <h5>Parameters:</h5>
-        
 
 <table class="params">
     <thead>
@@ -1264,12 +1262,14 @@ creation by <a href="Connection.html#bind">Connection#bind</a> and subsequent ca
     
     </tbody>
 </table>
-    
 
-    
+
+
 
 
 <dl class="details">
+
+    
 
     
 
@@ -1308,22 +1308,21 @@ creation by <a href="Connection.html#bind">Connection#bind</a> and subsequent ca
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-</dd>
 
-        </dl>
+
+
+
+
+
+
+
+        
     
 
     
@@ -1339,13 +1338,13 @@ creation by <a href="Connection.html#bind">Connection#bind</a> and subsequent ca
 </div>
 
 <nav>
-    <h2><a href="index.html">Index</a></h2><h3>Classes</h3><ul><li><a href="Connection.html">Connection</a></li><li><a href="Logger.html">Logger</a></li><li><a href="LogStream.html">LogStream</a></li></ul><h3>Events</h3><ul><li><a href="Connection.html#event:close">close</a></li><li><a href="Connection.html#event:connect">connect</a></li><li><a href="Connection.html#event:connecting">connecting</a></li><li><a href="Connection.html#event:error">error</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Connection.html">Connection</a></li><li><a href="Logger.html">Logger</a></li><li><a href="LogStream.html">LogStream</a></li></ul><h3>Events</h3><ul><li><a href="Connection.html#event:close">close</a></li><li><a href="Connection.html#event:connect">connect</a></li><li><a href="Connection.html#event:connecting">connecting</a></li><li><a href="Connection.html#event:error">error</a></li></ul>
 </nav>
 
-<br clear="both">
+<br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.0-alpha10</a> on Sun Jan 04 2015 18:48:09 GMT-0200 (Horário brasileiro de verão)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.0-alpha13</a> on Sun Jan 04 2015 21:11:53 GMT-0200 (Horário brasileiro de verão)
 </footer>
 
 <script> prettyPrint(); </script>
