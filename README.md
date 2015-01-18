@@ -1,7 +1,7 @@
 # Log Sink
 A service for streaming, storage and query of log data.
 
-This is the client-side implementation in nodejs. For the server-side implementation and server public API, see [log-sink-server](https://github.com/clubedaentrega/log-sink-server).
+This is the client-side implementation for both Nodejs and the browser. For the server-side implementation and server public API, see [log-sink-server](https://github.com/clubedaentrega/log-sink-server).
 
 ## Install
 `npm install log-sink --save`
@@ -13,11 +13,15 @@ var sink = require('log-sink'),
 
 // Connect to log sink server using a secure connection
 sink.connect('my-user', 'my-password', {
+	host: 'localhost',
+	port: 8018,
 	secure: true,
 	// If the server is using a self-signed certificate,
 	// include it here
 	ca: fs.readFileSync('keys/self-signed-cert.pem')
 })
+// In the browser, use:
+sink.connect('my-user', 'my-password', 'wss://localhost:8019')
 
 // Write
 // sink.{debug,info,warn,error,fatal}(name, [message], [extra])
@@ -50,6 +54,10 @@ sink.query({
 	console.log(logs)
 })
 ```
+
+The only difference between the use in Nodejs and browsers is the third `connect` parameter. In Nodejs, it's an object; for browser it's the WS url.
+
+Browsers will connect using WebSocket and Nodejs will use TCP directly. Note that the ports are NOT the same.
 
 ## Multiple connections
 ```js

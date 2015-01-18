@@ -1,6 +1,6 @@
 {
 	"name": "log-sink",
-	"version": "1.1.1",
+	"version": "1.2.0",
 	"author": "Sitegui <sitegui@sitegui.com.br>",
 	"description": "A service for streaming, storage and query of log data",
 	"main": "./index.js",
@@ -8,9 +8,14 @@
 		"type": "git",
 		"url": "https://github.com/clubedaentrega/log-sink"
 	},
-	"keywords": [],
+	"keywords": [
+		"browser",
+		"node",
+		"log",
+		"mongodb"
+	],
 	"dependencies": {
-		"asynconnection-node": "^0.1.0"
+		"asynconnection": "^0.1.0"
 	},
 	"license": "MIT",
 	"engines": {
@@ -23,6 +28,6 @@
 	"devDependencies": {
 		"jsdoc": "^3.3.0-alpha13",
 		"mocha": "^2.1.0",
-		"should": "^4.4.2"
+		"should": "^4.6.0"
 	}
 }
