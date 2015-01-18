@@ -1125,7 +1125,7 @@ this call and subsequent calls to <a href="Logger.html">Logger</a> methods</p>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Connection.js.html">Connection.js</a>, <a href="Connection.js.html#line318">line 318</a>
+        <a href="Connection.js.html">Connection.js</a>, <a href="Connection.js.html#line319">line 319</a>
     </li></ul></dd>
     
 
@@ -1316,7 +1316,7 @@ this call and subsequent calls to <a href="Logger.html">Logger</a> methods</p>
 
     
 
-    <h4 class="name" id="connect"><span class="type-signature"></span>connect<span class="signature">(user, password, socketOptions)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="connect"><span class="type-signature"></span>connect<span class="signature">(user, password, socketOptionsOrUrl)</span><span class="type-signature"></span></h4>
 
     
 
@@ -1406,13 +1406,16 @@ To connect to a server using TLS, set <code>socketOptions.secure</code> as <code
 
         <tr>
             
-                <td class="name"><code>socketOptions</code></td>
+                <td class="name"><code>socketOptionsOrUrl</code></td>
             
 
             <td class="type">
             
                 
 <span class="param-type">Object</span>
+|
+
+<span class="param-type">string</span>
 
 
             
@@ -1422,7 +1425,7 @@ To connect to a server using TLS, set <code>socketOptions.secure</code> as <code
 
             
 
-            <td class="description last"><p>an object passed to net.connect or tls.connect, if <code>socketOptions.secure</code> is <code>true</code></p></td>
+            <td class="description last"><p>In node: an object passed to net.connect or tls.connect, if <code>socketOptions.secure</code> is <code>true</code>. For browser: the websocket url as a string, like 'wss://example.com:8017/'</p></td>
         </tr>
 
     
@@ -1671,7 +1674,7 @@ To connect to a server using TLS, set <code>socketOptions.secure</code> as <code
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Connection.js.html">Connection.js</a>, <a href="Connection.js.html#line267">line 267</a>
+        <a href="Connection.js.html">Connection.js</a>, <a href="Connection.js.html#line268">line 268</a>
     </li></ul></dd>
     
 
@@ -1755,7 +1758,7 @@ would grow unboundedly</p>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Connection.js.html">Connection.js</a>, <a href="Connection.js.html#line191">line 191</a>
+        <a href="Connection.js.html">Connection.js</a>, <a href="Connection.js.html#line192">line 192</a>
     </li></ul></dd>
     
 
@@ -1964,7 +1967,7 @@ would grow unboundedly</p>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Connection.js.html">Connection.js</a>, <a href="Connection.js.html#line297">line 297</a>
+        <a href="Connection.js.html">Connection.js</a>, <a href="Connection.js.html#line298">line 298</a>
     </li></ul></dd>
     
 
@@ -2173,7 +2176,7 @@ would grow unboundedly</p>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Connection.js.html">Connection.js</a>, <a href="Connection.js.html#line307">line 307</a>
+        <a href="Connection.js.html">Connection.js</a>, <a href="Connection.js.html#line308">line 308</a>
     </li></ul></dd>
     
 
@@ -2382,7 +2385,7 @@ would grow unboundedly</p>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Connection.js.html">Connection.js</a>, <a href="Connection.js.html#line277">line 277</a>
+        <a href="Connection.js.html">Connection.js</a>, <a href="Connection.js.html#line278">line 278</a>
     </li></ul></dd>
     
 
@@ -3336,7 +3339,7 @@ would grow unboundedly</p>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Connection.js.html">Connection.js</a>, <a href="Connection.js.html#line378">line 378</a>
+        <a href="Connection.js.html">Connection.js</a>, <a href="Connection.js.html#line379">line 379</a>
     </li></ul></dd>
     
 
@@ -3838,7 +3841,7 @@ much more useful.</p>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Connection.js.html">Connection.js</a>, <a href="Connection.js.html#line214">line 214</a>
+        <a href="Connection.js.html">Connection.js</a>, <a href="Connection.js.html#line215">line 215</a>
     </li></ul></dd>
     
 
@@ -4427,7 +4430,7 @@ This is done asynchronously: the stream will be passed to the callback</p>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Connection.js.html">Connection.js</a>, <a href="Connection.js.html#line338">line 338</a>
+        <a href="Connection.js.html">Connection.js</a>, <a href="Connection.js.html#line339">line 339</a>
     </li></ul></dd>
     
 
@@ -4636,7 +4639,7 @@ This is done asynchronously: the stream will be passed to the callback</p>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Connection.js.html">Connection.js</a>, <a href="Connection.js.html#line287">line 287</a>
+        <a href="Connection.js.html">Connection.js</a>, <a href="Connection.js.html#line288">line 288</a>
     </li></ul></dd>
     
 
@@ -5558,7 +5561,7 @@ This is done asynchronously: the stream will be passed to the callback</p>
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.0-alpha13</a> on Sun Jan 04 2015 21:11:53 GMT-0200 (Horário brasileiro de verão)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.0-alpha13</a> on Sun Jan 18 2015 00:21:54 GMT-0200 (Horário brasileiro de verão)
 </footer>
 
 <script> prettyPrint(); </script>
