@@ -9,6 +9,7 @@ it('should connect to the server', function (done) {
 	sink.connect('test', '', {
 		secure: true,
 		port: 8018,
+		host: 'localhost',
 		ca: fs.readFileSync('test/example-cert.pem')
 	})
 	sink.once('connect', done)

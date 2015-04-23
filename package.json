@@ -26,8 +26,8 @@
 		"docs": "jsdoc -d docs -c docs.json -R README.md"
 	},
 	"devDependencies": {
-		"jsdoc": "^3.3.0-alpha13",
-		"mocha": "^2.1.0",
-		"should": "^4.6.0"
+		"jsdoc": "^3.3.0-beta3",
+		"mocha": "^2.2.4",
+		"should": "^6.0.1"
 	}
 }
