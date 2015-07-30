@@ -18,7 +18,7 @@ it('should connect to the server', function (done) {
 var stream
 it('should set a stream', function (done) {
 	sink.stream(function (err, stream_) {
-		should(err).be.null
+		should(err).be.null()
 		stream = stream_
 		done()
 	})
@@ -28,7 +28,7 @@ var minDate
 it('should write log and stream it', function (done) {
 	stream.on('data', function (log) {
 		log.origin.should.be.equal('test')
-		log.date.should.be.a.Date
+		log.date.should.be.instanceof(Date)
 		log.name.should.be.equal('mocha')
 		log.level.should.be.equal(sink.LEVEL.INFO)
 		log.relevance.should.be.equal(sink.RELEVANCE.NORMAL)
@@ -43,7 +43,7 @@ it('should write log and stream it', function (done) {
 it('should close the stream', function (done) {
 	stream.once('end', done)
 	stream.stop()
-	stream.stopped.should.be.true
+	stream.stopped.should.be.true()
 })
 
 it('should query logs', function (done) {
@@ -52,7 +52,7 @@ it('should query logs', function (done) {
 			min: minDate
 		}
 	}, function (err, logs) {
-		should(err).be.null
+		should(err).be.null()
 		logs.should.have.length(1)
 		logs[0].name.should.be.equal('mocha')
 		done()
