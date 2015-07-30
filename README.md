@@ -31,7 +31,7 @@ sink.info('readme', 'My first log', ['custom data', 17])
 sink.error('readme', new Error('We had a problem'))
 
 // Or avoid typing the required name every time
-var logger = sink.bind('readme')
+var logger = sink.bindName('readme')
 logger.debug('Got here!')
 
 // Streaming
