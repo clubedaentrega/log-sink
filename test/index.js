@@ -59,6 +59,14 @@ it('should query logs', function (done) {
 	})
 })
 
+it('should get permissions', function (done) {
+	sink.getPermissions(function (err, permissions) {
+		should(err).be.null()
+		permissions.should.be.eql(['test', 'test2'])
+		done()
+	})
+})
+
 it('should close the connection', function (done) {
 	sink.once('close', done)
 	sink.close()
