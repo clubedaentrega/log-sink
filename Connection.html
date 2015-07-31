@@ -41,8 +41,6 @@
         
 
     
-    <h2>Constructor</h2>
-    
 
     <h4 class="name" id="Connection"><span class="type-signature"></span>new Connection<span class="signature">()</span><span class="type-signature"></span></h4>
 
@@ -1024,7 +1022,7 @@ when appropriate</p>
 
     
 
-    <h4 class="name" id="bind"><span class="type-signature"></span>bind<span class="signature">(name)</span><span class="type-signature"> &rarr; {<a href="Logger.html">Logger</a>}</span></h4>
+    <h4 class="name" id="bindName"><span class="type-signature"></span>bindName<span class="signature">(name)</span><span class="type-signature"> &rarr; {<a href="Logger.html">Logger</a>}</span></h4>
 
     
 
@@ -1091,6 +1089,7 @@ this call and subsequent calls to <a href="Logger.html">Logger</a> methods</p>
     
     </tbody>
 </table>
+
 
 
 
@@ -1251,6 +1250,7 @@ this call and subsequent calls to <a href="Logger.html">Logger</a> methods</p>
     
     </tbody>
 </table>
+
 
 
 
@@ -1431,6 +1431,7 @@ To connect to a server using TLS, set <code>socketOptions.secure</code> as <code
     
     </tbody>
 </table>
+
 
 
 
@@ -1640,6 +1641,7 @@ To connect to a server using TLS, set <code>socketOptions.secure</code> as <code
     
     </tbody>
 </table>
+
 
 
 
@@ -1938,6 +1940,7 @@ would grow unboundedly</p>
 
 
 
+
 <dl class="details">
 
     
@@ -2147,6 +2150,7 @@ would grow unboundedly</p>
 
 
 
+
 <dl class="details">
 
     
@@ -2177,6 +2181,138 @@ would grow unboundedly</p>
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
         <a href="Connection.js.html">Connection.js</a>, <a href="Connection.js.html#line308">line 308</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getPermissions"><span class="type-signature"></span>getPermissions<span class="signature">(callback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Get the list of available permissions for the current user
+The current user name will be included in the answer and will always be the first element of the array</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>cb(err,permissions)</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Connection.js.html">Connection.js</a>, <a href="Connection.js.html#line409">line 409</a>
     </li></ul></dd>
     
 
@@ -2351,6 +2487,7 @@ would grow unboundedly</p>
     
     </tbody>
 </table>
+
 
 
 
@@ -2660,6 +2797,7 @@ would grow unboundedly</p>
     
     </tbody>
 </table>
+
             </td>
         </tr>
 
@@ -3040,6 +3178,7 @@ would grow unboundedly</p>
     
     </tbody>
 </table>
+
             </td>
         </tr>
 
@@ -3264,6 +3403,7 @@ would grow unboundedly</p>
     
     </tbody>
 </table>
+
             </td>
         </tr>
 
@@ -3305,6 +3445,7 @@ would grow unboundedly</p>
     
     </tbody>
 </table>
+
 
 
 
@@ -3378,7 +3519,7 @@ would grow unboundedly</p>
 
 <div class="description">
     <p>The low level way to send log data to the server.
-Most of times, <a href="Connection.html#info">Connection#info</a> (and its family) and <a href="Connection.html#bind">Connection#bind</a> will be
+Most of times, <a href="Connection.html#info">Connection#info</a> (and its family) and <a href="Connection.html#bindName">Connection#bindName</a> will be
 much more useful.</p>
 </div>
 
@@ -3768,6 +3909,7 @@ much more useful.</p>
     
     </tbody>
 </table>
+
             </td>
         </tr>
 
@@ -3807,6 +3949,7 @@ much more useful.</p>
     
     </tbody>
 </table>
+
 
 
 
@@ -4316,6 +4459,7 @@ This is done asynchronously: the stream will be passed to the callback</p>
     
     </tbody>
 </table>
+
             </td>
         </tr>
 
@@ -4396,6 +4540,7 @@ This is done asynchronously: the stream will be passed to the callback</p>
     
     </tbody>
 </table>
+
 
 
 
@@ -4605,6 +4750,7 @@ This is done asynchronously: the stream will be passed to the callback</p>
     
     </tbody>
 </table>
+
 
 
 
@@ -5561,7 +5707,7 @@ This is done asynchronously: the stream will be passed to the callback</p>
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.0-alpha13</a> on Sun Jan 18 2015 00:21:54 GMT-0200 (Horário brasileiro de verão)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.2</a> on Thu Jul 30 2015 22:06:15 GMT-0300 (Hora oficial do Brasil)
 </footer>
 
 <script> prettyPrint(); </script>
