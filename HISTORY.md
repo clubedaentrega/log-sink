@@ -1,4 +1,4 @@
-# next
+# 2.1.0
 
 * Added: `sink.prepareError(error)` to pretty format `Error` instances into JSON objects, including protection against circular references and basic stack trace parsing
 
