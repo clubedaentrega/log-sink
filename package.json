@@ -1,6 +1,6 @@
 {
 	"name": "log-sink",
-	"version": "2.1.0",
+	"version": "2.1.1",
 	"author": "Sitegui <sitegui@sitegui.com.br>",
 	"description": "A service for streaming, storage and query of log data",
 	"main": "./index.js",
@@ -26,8 +26,8 @@
 		"docs": "jsdoc -d docs -c docs.json -R README.md"
 	},
 	"devDependencies": {
-		"jsdoc": "^3.3.2",
-		"mocha": "^2.2.5",
-		"should": "^7.0.2"
+		"jsdoc": "^3.3.3",
+		"mocha": "^2.3.3",
+		"should": "^7.1.0"
 	}
 }
