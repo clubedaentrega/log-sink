@@ -1,95 +1,273 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: Logger</title>
-
-    <script src="scripts/prettify/prettify.js"> </script>
-    <script src="scripts/prettify/lang-css.js"> </script>
+    <title>Class: Logger</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/jquery.min.js"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
-    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
-</head>
-
-<body>
-
-<div id="main">
-
-    <h1 class="page-title">Class: Logger</h1>
-
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/jaguar.css">
+    
+    
+    <script>
+    var config = {"monospaceLinks":false,"cleverLinks":false,"default":{}};
+    </script>
     
 
+    
+</head>
+<body>
+<div id="wrap" class="clearfix">
+    
+<div class="navigation">
+    <h3 class="applicationName"><a href="index.html"></a></h3>
+
+    <div class="search">
+        <input id="search" type="text" class="form-control input-sm" placeholder="Search Documentations">
+    </div>
+    <ul class="list">
+    
+        <li class="item" data-name="Connection">
+            <span class="title">
+                <a href="Connection.html">Connection</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li data-name="Connection#commit"><a href="Connection.html#commit">commit</a></li>
+            
+                <li data-name="Connection#LEVEL"><a href="Connection.html#LEVEL">LEVEL</a></li>
+            
+                <li data-name="Connection#RELEVANCE"><a href="Connection.html#RELEVANCE">RELEVANCE</a></li>
+            
+                <li data-name="Connection#relevance"><a href="Connection.html#relevance">relevance</a></li>
+            
+                <li data-name="Connection#STATE"><a href="Connection.html#STATE">STATE</a></li>
+            
+                <li data-name="Connection#state"><a href="Connection.html#state">state</a></li>
+            
+                <li data-name="Connection#user"><a href="Connection.html#user">user</a></li>
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            <span class="subtitle">Typedefs</span>
+            
+                <li data-name="Connection~Log"><a href="Connection.html#~Log">Log</a></li>
+            
+                <li data-name="Connection~Range"><a href="Connection.html#~Range">Range</a></li>
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="Connection#bindName"><a href="Connection.html#bindName">bindName</a></li>
+            
+                <li data-name="Connection#close"><a href="Connection.html#close">close</a></li>
+            
+                <li data-name="Connection#connect"><a href="Connection.html#connect">connect</a></li>
+            
+                <li data-name="Connection#debug"><a href="Connection.html#debug">debug</a></li>
+            
+                <li data-name="Connection#disable"><a href="Connection.html#disable">disable</a></li>
+            
+                <li data-name="Connection#error"><a href="Connection.html#error">error</a></li>
+            
+                <li data-name="Connection#fatal"><a href="Connection.html#fatal">fatal</a></li>
+            
+                <li data-name="Connection#getLogger"><a href="Connection.html#getLogger">getLogger</a></li>
+            
+                <li data-name="Connection#getPermissions"><a href="Connection.html#getPermissions">getPermissions</a></li>
+            
+                <li data-name="Connection#info"><a href="Connection.html#info">info</a></li>
+            
+                <li data-name="Connection#query"><a href="Connection.html#query">query</a></li>
+            
+                <li data-name="Connection#sendLog"><a href="Connection.html#sendLog">sendLog</a></li>
+            
+                <li data-name="Connection#stream"><a href="Connection.html#stream">stream</a></li>
+            
+                <li data-name="Connection#warn"><a href="Connection.html#warn">warn</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            <span class="subtitle">Events</span>
+            
+                <li data-name="Connection#event:close"><a href="Connection.html#event:close">close</a></li>
+            
+                <li data-name="Connection#event:connect"><a href="Connection.html#event:connect">connect</a></li>
+            
+                <li data-name="Connection#event:connecting"><a href="Connection.html#event:connecting">connecting</a></li>
+            
+                <li data-name="Connection#event:error"><a href="Connection.html#event:error">error</a></li>
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="Logger">
+            <span class="title">
+                <a href="Logger.html">Logger</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li data-name="Logger#basicExtra"><a href="Logger.html#basicExtra">basicExtra</a></li>
+            
+                <li data-name="Logger#conn"><a href="Logger.html#conn">conn</a></li>
+            
+                <li data-name="Logger#name"><a href="Logger.html#name">name</a></li>
+            
+                <li data-name="Logger#relevance"><a href="Logger.html#relevance">relevance</a></li>
+            
+                <li data-name="Logger#then"><a href="Logger.html#then">then</a></li>
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="Logger#debug"><a href="Logger.html#debug">debug</a></li>
+            
+                <li data-name="Logger#error"><a href="Logger.html#error">error</a></li>
+            
+                <li data-name="Logger#fatal"><a href="Logger.html#fatal">fatal</a></li>
+            
+                <li data-name="Logger#info"><a href="Logger.html#info">info</a></li>
+            
+                <li data-name="Logger#warn"><a href="Logger.html#warn">warn</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="LogStream">
+            <span class="title">
+                <a href="LogStream.html">LogStream</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li data-name="LogStream#connection"><a href="LogStream.html#connection">connection</a></li>
+            
+                <li data-name="LogStream#stopped"><a href="LogStream.html#stopped">stopped</a></li>
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="LogStream#stop"><a href="LogStream.html#stop">stop</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+    </ul>
+</div>
+    <div class="main">
+        <h1 class="page-title" data-filename="Logger.html">Class: Logger</h1>
+        
 
 
 
 <section>
-
+    
 <header>
+    <h2>
+    Logger
+    </h2>
     
-        <h2>
-        Logger
-        </h2>
-        
-    
-</header>
+</header>  
 
 <article>
     <div class="container-overview">
     
+    
+    
         
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="Logger">
+            
+            new Logger<span class="signature">(conn, name, <span class="optional">relevance</span>, <span class="optional">basicExtra</span>)</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            Logger.js, line 15
+        </div>
+        
+    </div>
 
     
-
-    <h4 class="name" id="Logger"><span class="type-signature"></span>new Logger<span class="signature">(conn, name)</span><span class="type-signature"></span></h4>
-
+</dt>
+<dd>
     
-
-
-
-<div class="description">
-    <p>Used to ease logging multiple times with the same <code>name</code> field.
+    
+    <div class="description">
+        <p>Use it to ease logging multiple times with the same <code>name</code>, <code>relevance</code> and some <code>extra</code> keys
 Logs created this way will have the <code>time</code> field set as the elapsed time (in ms) between
-creation by <a href="Connection.html#bindName">Connection#bindName</a> and subsequent calls to its methods.</p>
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
+creation by <a href="Connection.html#getLogger">Connection#getLogger</a> and subsequent calls to its methods.
+Keys on the <code>basicExtra</code> parameter will be assigned to the extra object passed
+when calling <a href="Logger.html">Logger</a> methods.</p>
+    </div>
     
+
+    
+    
+    
+    
+    
+        
 
 <table class="params">
     <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
         <tr>
             
                 <td class="name"><code>conn</code></td>
             
-
+            
             <td class="type">
             
                 
@@ -98,21 +276,26 @@ creation by <a href="Connection.html#bindName">Connection#bindName</a> and subse
 
             
             </td>
-
             
-
             
-
-            <td class="description last"></td>
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                </td>
         </tr>
-
-    
-
+	
+	
+	
         <tr>
             
                 <td class="name"><code>name</code></td>
             
-
+            
             <td class="type">
             
                 
@@ -121,369 +304,426 @@ creation by <a href="Connection.html#bindName">Connection#bindName</a> and subse
 
             
             </td>
-
             
-
             
-
-            <td class="description last"></td>
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                </td>
         </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>relevance</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Connection.html#RELEVANCE">Connection#RELEVANCE</a></span>
 
-    
-    </tbody>
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>basicExtra</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	</tbody>
 </table>
-
-
-
-
-
-
+    
+    
+    
 <dl class="details">
-
+    
+        
+    
+    
     
 
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Logger.js.html">Logger.js</a>, <a href="Logger.js.html#line11">line 11</a>
-    </li></ul></dd>
     
-
     
-
-    
-
     
 </dl>
 
+    
+    
 
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    
+    
+    
+    
+    
+    
+</dd>
 
     
     </div>
-
     
-
     
-
     
-
-     
-
     
-
+    
+    
+    
+    
+    
+    
+    
     
         <h3 class="subsection-title">Members</h3>
-
         
+        <dl>
             
-<h4 class="name" id="conn"><span class="type-signature"></span>conn<span class="type-signature"> :<a href="Connection.html">Connection</a></span></h4>
-
-
-
-
-<div class="description">
-    <p>Parent connection</p>
-</div>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type"><a href="Connection.html">Connection</a></span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="basicExtra"><span class="type-signature ">nullable</span>basicExtra<span class="type-signature type object">Object</span> </h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Binded keys/values for <code>extra</code></p>
+    </div>
+    
+    
+    
 <dl class="details">
-
+    
+        
+    
+    
     
 
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Logger.js.html">Logger.js</a>, <a href="Logger.js.html#line16">line 16</a>
-    </li></ul></dd>
     
-
     
-
-    
-
     
 </dl>
 
-
-
-
-
+    
+    
+</dd>
 
         
             
-<h4 class="name" id="name"><span class="type-signature"></span>name<span class="type-signature"> :string</span></h4>
-
-
-
-
-<div class="description">
-    <p>Binded <code>name</code> value</p>
-</div>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type">string</span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="conn">conn<span class="type-signature type connection"><a href="Connection.html">Connection</a></span> </h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Parent connection</p>
+    </div>
+    
+    
+    
 <dl class="details">
-
+    
+        
+    
+    
     
 
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Logger.js.html">Logger.js</a>, <a href="Logger.js.html#line22">line 22</a>
-    </li></ul></dd>
     
-
     
-
-    
-
     
 </dl>
 
-
-
-
-
+    
+    
+</dd>
 
         
             
-<h4 class="name" id="then"><span class="type-signature"></span>then<span class="type-signature"> :number</span></h4>
-
-
-
-
-<div class="description">
-    <p>The timestamp (in ms) when it was created</p>
-</div>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type">number</span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="name">name<span class="type-signature type string">string</span> </h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Binded <code>name</code> value</p>
+    </div>
+    
+    
+    
 <dl class="details">
-
+    
+        
+    
+    
     
 
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Logger.js.html">Logger.js</a>, <a href="Logger.js.html#line28">line 28</a>
-    </li></ul></dd>
     
-
     
-
-    
-
     
 </dl>
 
-
-
-
-
+    
+    
+</dd>
 
         
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="relevance"><span class="type-signature ">nullable</span>relevance<span class="type-signature type connection#relevance"><a href="Connection.html#RELEVANCE">Connection#RELEVANCE</a></span> </h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Binded <code>relevance</code> value</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
     
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="then">then<span class="type-signature type number">number</span> </h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>The timestamp (in ms) when it was created</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        </dl>
+    
+    
     
         <h3 class="subsection-title">Methods</h3>
-
         
+        <dl>
             
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="debug">
+            
+            debug<span class="signature">(<span class="optional">message</span>, <span class="optional">extra</span>)</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            Logger.js, line 57
+        </div>
+        
+    </div>
 
     
-
-    <h4 class="name" id="debug"><span class="type-signature"></span>debug<span class="signature">(message<span class="signature-attributes">opt</span>, extra<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
-
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Simpler way for <a href="Connection.html#sendLog">Connection#sendLog</a> with <code>level</code> set as DEBUG</p>
+    </div>
     
 
-
-
-<div class="description">
-    <p>Simpler way for <a href="Connection.html#sendLog">Connection#sendLog</a> with <code>level</code> set as DEBUG</p>
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
     
+    
+    
+    
+    
+        
 
 <table class="params">
     <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
         <tr>
             
                 <td class="name"><code>message</code></td>
             
-
+            
             <td class="type">
             
                 
@@ -495,31 +735,28 @@ creation by <a href="Connection.html#bindName">Connection#bindName</a> and subse
 
             
             </td>
-
             
-                <td class="attributes">
+            
+            
+            <td class="description last">
                 
-                    &lt;optional><br>
-                
-
-                
-
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
                 
                 </td>
-            
-
-            
-
-            <td class="description last"></td>
         </tr>
-
-    
-
+	
+	
+	
         <tr>
             
                 <td class="name"><code>extra</code></td>
             
-
+            
             <td class="type">
             
                 
@@ -528,141 +765,121 @@ creation by <a href="Connection.html#bindName">Connection#bindName</a> and subse
 
             
             </td>
-
             
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
             
-
             
-
-            <td class="description last"><p>any JSON-compatible value</p></td>
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>any JSON-compatible value</p></td>
         </tr>
-
-    
-    </tbody>
+	
+	
+	</tbody>
 </table>
-
-
-
-
-
-
+    
+    
+    
 <dl class="details">
-
+    
+        
+    
+    
     
 
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Logger.js.html">Logger.js</a>, <a href="Logger.js.html#line36">line 36</a>
-    </li></ul></dd>
     
-
     
-
-    
-
     
 </dl>
 
+    
+    
 
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    
+    
+    
+    
+    
+    
+</dd>
 
         
             
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="error">
+            
+            error<span class="signature">(<span class="optional">message</span>, <span class="optional">extra</span>)</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            Logger.js, line 84
+        </div>
+        
+    </div>
 
     
-
-    <h4 class="name" id="error"><span class="type-signature"></span>error<span class="signature">(message<span class="signature-attributes">opt</span>, extra<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
-
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Simpler way for <a href="Connection.html#sendLog">Connection#sendLog</a> with <code>level</code> set as ERROR</p>
+    </div>
     
 
-
-
-<div class="description">
-    <p>Simpler way for <a href="Connection.html#sendLog">Connection#sendLog</a> with <code>level</code> set as ERROR</p>
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
     
+    
+    
+    
+    
+        
 
 <table class="params">
     <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
         <tr>
             
                 <td class="name"><code>message</code></td>
             
-
+            
             <td class="type">
             
                 
@@ -674,31 +891,28 @@ creation by <a href="Connection.html#bindName">Connection#bindName</a> and subse
 
             
             </td>
-
             
-                <td class="attributes">
+            
+            
+            <td class="description last">
                 
-                    &lt;optional><br>
-                
-
-                
-
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
                 
                 </td>
-            
-
-            
-
-            <td class="description last"></td>
         </tr>
-
-    
-
+	
+	
+	
         <tr>
             
                 <td class="name"><code>extra</code></td>
             
-
+            
             <td class="type">
             
                 
@@ -707,141 +921,121 @@ creation by <a href="Connection.html#bindName">Connection#bindName</a> and subse
 
             
             </td>
-
             
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
             
-
             
-
-            <td class="description last"><p>any JSON-compatible value</p></td>
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>any JSON-compatible value</p></td>
         </tr>
-
-    
-    </tbody>
+	
+	
+	</tbody>
 </table>
-
-
-
-
-
-
+    
+    
+    
 <dl class="details">
-
+    
+        
+    
+    
     
 
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Logger.js.html">Logger.js</a>, <a href="Logger.js.html#line63">line 63</a>
-    </li></ul></dd>
     
-
     
-
-    
-
     
 </dl>
 
+    
+    
 
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    
+    
+    
+    
+    
+    
+</dd>
 
         
             
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="fatal">
+            
+            fatal<span class="signature">(<span class="optional">message</span>, <span class="optional">extra</span>)</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            Logger.js, line 93
+        </div>
+        
+    </div>
 
     
-
-    <h4 class="name" id="fatal"><span class="type-signature"></span>fatal<span class="signature">(message<span class="signature-attributes">opt</span>, extra<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
-
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Simpler way for <a href="Connection.html#sendLog">Connection#sendLog</a> with <code>level</code> set as FATAL</p>
+    </div>
     
 
-
-
-<div class="description">
-    <p>Simpler way for <a href="Connection.html#sendLog">Connection#sendLog</a> with <code>level</code> set as FATAL</p>
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
     
+    
+    
+    
+    
+        
 
 <table class="params">
     <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
         <tr>
             
                 <td class="name"><code>message</code></td>
             
-
+            
             <td class="type">
             
                 
@@ -853,31 +1047,28 @@ creation by <a href="Connection.html#bindName">Connection#bindName</a> and subse
 
             
             </td>
-
             
-                <td class="attributes">
+            
+            
+            <td class="description last">
                 
-                    &lt;optional><br>
-                
-
-                
-
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
                 
                 </td>
-            
-
-            
-
-            <td class="description last"></td>
         </tr>
-
-    
-
+	
+	
+	
         <tr>
             
                 <td class="name"><code>extra</code></td>
             
-
+            
             <td class="type">
             
                 
@@ -886,141 +1077,121 @@ creation by <a href="Connection.html#bindName">Connection#bindName</a> and subse
 
             
             </td>
-
             
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
             
-
             
-
-            <td class="description last"><p>any JSON-compatible value</p></td>
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>any JSON-compatible value</p></td>
         </tr>
-
-    
-    </tbody>
+	
+	
+	</tbody>
 </table>
-
-
-
-
-
-
+    
+    
+    
 <dl class="details">
-
+    
+        
+    
+    
     
 
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Logger.js.html">Logger.js</a>, <a href="Logger.js.html#line72">line 72</a>
-    </li></ul></dd>
     
-
     
-
-    
-
     
 </dl>
 
+    
+    
 
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    
+    
+    
+    
+    
+    
+</dd>
 
         
             
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="info">
+            
+            info<span class="signature">(<span class="optional">message</span>, <span class="optional">extra</span>)</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            Logger.js, line 66
+        </div>
+        
+    </div>
 
     
-
-    <h4 class="name" id="info"><span class="type-signature"></span>info<span class="signature">(message<span class="signature-attributes">opt</span>, extra<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
-
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Simpler way for <a href="Connection.html#sendLog">Connection#sendLog</a> with <code>level</code> set as INFO</p>
+    </div>
     
 
-
-
-<div class="description">
-    <p>Simpler way for <a href="Connection.html#sendLog">Connection#sendLog</a> with <code>level</code> set as INFO</p>
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
     
+    
+    
+    
+    
+        
 
 <table class="params">
     <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
         <tr>
             
                 <td class="name"><code>message</code></td>
             
-
+            
             <td class="type">
             
                 
@@ -1032,31 +1203,28 @@ creation by <a href="Connection.html#bindName">Connection#bindName</a> and subse
 
             
             </td>
-
             
-                <td class="attributes">
+            
+            
+            <td class="description last">
                 
-                    &lt;optional><br>
-                
-
-                
-
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
                 
                 </td>
-            
-
-            
-
-            <td class="description last"></td>
         </tr>
-
-    
-
+	
+	
+	
         <tr>
             
                 <td class="name"><code>extra</code></td>
             
-
+            
             <td class="type">
             
                 
@@ -1065,141 +1233,121 @@ creation by <a href="Connection.html#bindName">Connection#bindName</a> and subse
 
             
             </td>
-
             
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
             
-
             
-
-            <td class="description last"><p>any JSON-compatible value</p></td>
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>any JSON-compatible value</p></td>
         </tr>
-
-    
-    </tbody>
+	
+	
+	</tbody>
 </table>
-
-
-
-
-
-
+    
+    
+    
 <dl class="details">
-
+    
+        
+    
+    
     
 
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Logger.js.html">Logger.js</a>, <a href="Logger.js.html#line45">line 45</a>
-    </li></ul></dd>
     
-
     
-
-    
-
     
 </dl>
 
+    
+    
 
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    
+    
+    
+    
+    
+    
+</dd>
 
         
             
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="warn">
+            
+            warn<span class="signature">(<span class="optional">message</span>, <span class="optional">extra</span>)</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            Logger.js, line 75
+        </div>
+        
+    </div>
 
     
-
-    <h4 class="name" id="warn"><span class="type-signature"></span>warn<span class="signature">(message<span class="signature-attributes">opt</span>, extra<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
-
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Simpler way for <a href="Connection.html#sendLog">Connection#sendLog</a> with <code>level</code> set as WARN</p>
+    </div>
     
 
-
-
-<div class="description">
-    <p>Simpler way for <a href="Connection.html#sendLog">Connection#sendLog</a> with <code>level</code> set as WARN</p>
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
     
+    
+    
+    
+    
+        
 
 <table class="params">
     <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
         <tr>
             
                 <td class="name"><code>message</code></td>
             
-
+            
             <td class="type">
             
                 
@@ -1211,31 +1359,28 @@ creation by <a href="Connection.html#bindName">Connection#bindName</a> and subse
 
             
             </td>
-
             
-                <td class="attributes">
+            
+            
+            <td class="description last">
                 
-                    &lt;optional><br>
-                
-
-                
-
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
                 
                 </td>
-            
-
-            
-
-            <td class="description last"></td>
         </tr>
-
-    
-
+	
+	
+	
         <tr>
             
                 <td class="name"><code>extra</code></td>
             
-
+            
             <td class="type">
             
                 
@@ -1244,114 +1389,88 @@ creation by <a href="Connection.html#bindName">Connection#bindName</a> and subse
 
             
             </td>
-
             
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
             
-
             
-
-            <td class="description last"><p>any JSON-compatible value</p></td>
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>any JSON-compatible value</p></td>
         </tr>
-
-    
-    </tbody>
+	
+	
+	</tbody>
 </table>
-
-
-
-
-
-
+    
+    
+    
 <dl class="details">
-
+    
+        
+    
+    
     
 
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Logger.js.html">Logger.js</a>, <a href="Logger.js.html#line54">line 54</a>
-    </li></ul></dd>
     
-
     
-
-    
-
     
 </dl>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
+    
     
 
     
 
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        </dl>
+    
+    
+    
+    
     
 </article>
 
-</section>
+</section>  
 
 
 
 
+
+        
+
+        <footer>
+            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.2</a> on Sat Oct 17 2015 09:53:58 GMT-0300 (Hora oficial do Brasil)
+        </footer>
+    </div>
 </div>
-
-<nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Connection.html">Connection</a></li><li><a href="Logger.html">Logger</a></li><li><a href="LogStream.html">LogStream</a></li></ul><h3>Events</h3><ul><li><a href="Connection.html#event:close">close</a></li><li><a href="Connection.html#event:connect">connect</a></li><li><a href="Connection.html#event:connecting">connecting</a></li><li><a href="Connection.html#event:error">error</a></li></ul>
-</nav>
-
-<br class="clear">
-
-<footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.2</a> on Sun Aug 30 2015 00:25:47 GMT-0300 (Hora oficial do Brasil)
-</footer>
-
-<script> prettyPrint(); </script>
-<script src="scripts/linenumber.js"> </script>
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script src="scripts/main.js"></script>
 </body>
 </html>
