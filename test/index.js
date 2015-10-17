@@ -17,7 +17,7 @@ it('should connect to the server', function (done) {
 
 var stream
 it('should set a stream', function (done) {
-	sink.stream(function (err, stream_) {
+	sink.stream({}, true, function (err, stream_) {
 		should(err).be.null()
 		stream = stream_
 		done()
@@ -26,18 +26,41 @@ it('should set a stream', function (done) {
 
 var minDate
 it('should write log and stream it', function (done) {
-	stream.on('data', function (log) {
+	stream.once('data', function (log) {
 		log.origin.should.be.equal('test')
 		log.date.should.be.instanceof(Date)
 		log.name.should.be.equal('mocha')
 		log.level.should.be.equal(sink.LEVEL.INFO)
 		log.relevance.should.be.equal(sink.RELEVANCE.NORMAL)
 		log.message.should.be.equal('my-message')
-		should(log.extra).be.equal(undefined)
+		log.extra.should.be.eql([3, 14])
 		done()
 	})
 	minDate = new Date
 	sink.info('mocha', 'my-message', [3, 14])
+})
+
+it('should write using a binded logger', function (done) {
+	stream.once('data', function (log) {
+		log.origin.should.be.equal('test')
+		log.date.should.be.instanceof(Date)
+		log.name.should.be.equal('name')
+		log.level.should.be.equal(sink.LEVEL.DEBUG)
+		log.relevance.should.be.equal(sink.RELEVANCE.HIGH)
+		log.message.should.be.equal('message')
+		log.extra.should.be.eql({
+			a: 2,
+			b: 3
+		})
+
+		done()
+	})
+	var logger = sink.getLogger('name', sink.RELEVANCE.HIGH, {
+		a: 2
+	})
+	logger.debug('message', {
+		b: 3
+	})
 })
 
 it('should close the stream', function (done) {
