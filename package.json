@@ -23,7 +23,7 @@
 	},
 	"scripts": {
 		"test": "mocha test",
-		"docs": "jsdoc -d docs -c docs.json -R README.md"
+		"docs": "jsdoc -d docs -c docs.json -R README.md -t jaguarjs-jsdoc"
 	},
 	"devDependencies": {
 		"jsdoc": "^3.3.3",
