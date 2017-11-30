@@ -90,6 +90,32 @@ it('should get permissions', function (done) {
 	})
 })
 
+it('should log an error instance with extra properties', function (done) {
+	let oid = {
+		_bsontype: 'ObjectID'
+	}
+
+	Object.defineProperty(oid, 'toJSON', {
+		value: () => '5a2018e310901027a949c444'
+	})
+
+	let err = new Error('Error msg')
+	err.oid = oid
+
+	sink.error('extra log', err)
+	sink.query({
+		name: 'extra log',
+		date: {
+			min: minDate
+		}
+	}, function (err, logs) {
+		should(err).be.null()
+		logs.should.have.length(1)
+		logs[0].name.should.be.equal('extra log')
+		done()
+	})
+})
+
 it('should close the connection', function (done) {
 	sink.once('close', done)
 	sink.close()
