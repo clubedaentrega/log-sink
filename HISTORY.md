@@ -1,3 +1,6 @@
+# 2.3.0
+* Changed: `sink.prepareError(error)` call `toJSON()` on properties when available
+
 # 2.2.0
 * Deprecated: `Connection#bindName`
 * Added: `Connection#getLogger` that replaces `Connection#bindName` and adds support for setting relevance and some basic extra keys per logger

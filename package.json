@@ -1,6 +1,6 @@
 {
 	"name": "log-sink",
-	"version": "2.2.0",
+	"version": "2.3.0",
 	"author": "Sitegui <sitegui@sitegui.com.br>",
 	"description": "A service for streaming, storage and query of log data",
 	"main": "./index.js",
