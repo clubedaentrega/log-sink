@@ -18,5 +18,6 @@
 	"devel": true,
 	"freeze": true,
 	"-W033": true,
-	"-W058": true
+	"-W058": true,
+	"esversion": 6
 }

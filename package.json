@@ -15,19 +15,19 @@
 		"mongodb"
 	],
 	"dependencies": {
-		"asynconnection": "^0.1.0"
+		"asynconnection": "^1.0.0"
 	},
 	"license": "MIT",
 	"engines": {
-		"node": ">=0.12"
+		"node": ">=4"
 	},
 	"scripts": {
 		"test": "mocha test",
 		"docs": "jsdoc -d docs -c docs.json -R README.md -t jaguarjs-jsdoc"
 	},
 	"devDependencies": {
-		"jsdoc": "^3.4.3",
-		"mocha": "^3.2.0",
-		"should": "^11.2.0"
+		"jsdoc": "^3.5.5",
+		"mocha": "^4.0.1",
+		"should": "^13.1.3"
 	}
 }
