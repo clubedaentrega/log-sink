@@ -1,3 +1,7 @@
+# 2.4.0
+* Added: `sink.prepareError(error)` accepts a new argument `maxDepth` with default value of 4
+* Fixed: `sink.prepareError(error)` does not stack-overflow with error instances with self reference
+
 # 2.3.0
 * Changed: `sink.prepareError(error)` call `toJSON()` on properties when available
 

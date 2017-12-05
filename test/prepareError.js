@@ -84,6 +84,25 @@ describe('prepareError', () => {
 			stack: prepared.stack
 		})
 	})
+
+	it('should call toJSON', () => {
+		check({
+			toJSON() {
+				return {
+					b: 17
+				}
+			},
+			a: 12
+		}, {
+			b: 17
+		})
+
+		check({
+			toJSON() {
+				return 17
+			}
+		}, 17)
+	})
 })
 
 function check(input, output) {
