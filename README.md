@@ -1,4 +1,7 @@
 # Log Sink
+[![Build Status](https://travis-ci.org/clubedaentrega/log-sink.svg?branch=master)](https://travis-ci.org/clubedaentrega/log-sink)
+[![Dependency Status](https://david-dm.org/clubedaentrega/log-sink.svg)](https://david-dm.org/clubedaentrega/log-sink)
+
 A service for streaming, storage and query of log data.
 
 This is the client-side implementation for both Nodejs and the browser. For the server-side implementation and server public API, see [log-sink-server](https://github.com/clubedaentrega/log-sink-server).
