@@ -1,3 +1,8 @@
+# 3.0.0
+
+## Breaking change
+* Drop support for Node.JS < 6
+
 # 2.4.1
 * Fixed: typo in previous release
 
