@@ -1,11 +1,14 @@
-/*globals it*/
+/* globals it, before */
 'use strict'
 
-var should = require('should'),
+let should = require('should'),
 	sink = require('../'),
-	fs = require('fs')
+	fs = require('fs'),
+	utils = require('./utils')
 
-it('should connect to the server', function (done) {
+before(done => utils.start(done))
+
+it('should connect to the server', done => {
 	sink.connect('test', '', {
 		secure: true,
 		port: 8018,
@@ -15,18 +18,18 @@ it('should connect to the server', function (done) {
 	sink.once('connect', done)
 })
 
-var stream
-it('should set a stream', function (done) {
-	sink.stream({}, true, function (err, stream_) {
+let stream
+it('should set a stream', done => {
+	sink.stream({}, true, (err, stream_) => {
 		should(err).be.null()
 		stream = stream_
 		done()
 	})
 })
 
-var minDate
-it('should write log and stream it', function (done) {
-	stream.once('data', function (log) {
+let minDate
+it('should write log and stream it', done => {
+	stream.once('data', log => {
 		log.origin.should.be.equal('test')
 		log.date.should.be.instanceof(Date)
 		log.name.should.be.equal('mocha')
@@ -40,8 +43,8 @@ it('should write log and stream it', function (done) {
 	sink.info('mocha', 'my-message', [3, 14])
 })
 
-it('should write using a binded logger', function (done) {
-	stream.once('data', function (log) {
+it('should write using a binded logger', done => {
+	stream.once('data', log => {
 		log.origin.should.be.equal('test')
 		log.date.should.be.instanceof(Date)
 		log.name.should.be.equal('name')
@@ -55,7 +58,7 @@ it('should write using a binded logger', function (done) {
 
 		done()
 	})
-	var logger = sink.getLogger('name', sink.RELEVANCE.HIGH, {
+	let logger = sink.getLogger('name', sink.RELEVANCE.HIGH, {
 		a: 2
 	})
 	logger.debug('message', {
@@ -63,18 +66,18 @@ it('should write using a binded logger', function (done) {
 	})
 })
 
-it('should close the stream', function (done) {
+it('should close the stream', done => {
 	stream.once('end', done)
 	stream.stop()
 	stream.stopped.should.be.true()
 })
 
-it('should query logs', function (done) {
+it('should query logs', done => {
 	sink.query({
 		date: {
 			min: minDate
 		}
-	}, function (err, logs) {
+	}, (err, logs) => {
 		should(err).be.null()
 		logs.should.have.length(1)
 		logs[0].name.should.be.equal('mocha')
@@ -82,15 +85,15 @@ it('should query logs', function (done) {
 	})
 })
 
-it('should get permissions', function (done) {
-	sink.getPermissions(function (err, permissions) {
+it('should get permissions', done => {
+	sink.getPermissions((err, permissions) => {
 		should(err).be.null()
 		permissions.should.be.eql(['test', 'test2'])
 		done()
 	})
 })
 
-it('should log an error instance with extra properties', function (done) {
+it('should log an error instance with extra properties', done => {
 	let oid = {
 		_bsontype: 'ObjectID'
 	}
@@ -108,7 +111,7 @@ it('should log an error instance with extra properties', function (done) {
 		date: {
 			min: minDate
 		}
-	}, function (err, logs) {
+	}, (err, logs) => {
 		should(err).be.null()
 		logs.should.have.length(1)
 		logs[0].name.should.be.equal('extra log')
@@ -116,22 +119,22 @@ it('should log an error instance with extra properties', function (done) {
 	})
 })
 
-it('should close the connection', function (done) {
+it('should close the connection', done => {
 	sink.once('close', done)
 	sink.close()
 })
 
-it('should fail on stream and query after closed', function (done) {
-	sink.stream(function (err) {
+it('should fail on stream and query after closed', done => {
+	sink.stream(err => {
 		err.message.should.be.equal('Connection is closed')
-		sink.query(function (err) {
+		sink.query(err => {
 			err.message.should.be.equal('Connection is closed')
 			done()
 		})
 	})
 })
 
-it('should cap values to 1000 bytes', function () {
+it('should cap values to 1000 bytes', () => {
 	let b1 = '\u000F',
 		b2 = '\u00FF',
 		b3 = '\u0FFF'
