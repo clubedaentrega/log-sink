@@ -19,15 +19,16 @@
 	},
 	"license": "MIT",
 	"engines": {
-		"node": ">=4"
+		"node": ">=6"
 	},
 	"scripts": {
-		"test": "mocha test",
+		"test": "mocha test --exit -t 10000",
 		"docs": "jsdoc -d docs -c docs.json -R README.md -t jaguarjs-jsdoc"
 	},
 	"devDependencies": {
 		"jsdoc": "^3.5.5",
-		"mocha": "^4.0.1",
-		"should": "^13.1.3"
+		"log-sink-server": "^5.0.0",
+		"mocha": "^5.0.4",
+		"should": "^13.2.1"
 	}
 }
