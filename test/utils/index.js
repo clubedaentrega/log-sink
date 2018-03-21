@@ -9,8 +9,12 @@ module.exports.start = function (done) {
 		return done()
 	}
 
+	fs.writeFileSync(
+		'node_modules/log-sink-server/config.js',
+		fs.readFileSync('node_modules/log-sink-server/example-config.js')
+	)
+
 	// Fork server
-	fs.copyFileSync('node_modules/log-sink-server/example-config.js', 'node_modules/log-sink-server/config.js')
 	let children = cp.fork('.', ['--test-mode'], {
 		cwd: 'node_modules/log-sink-server'
 	})
